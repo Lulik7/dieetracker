@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="container">
+        <h1>DietTracker</h1>
+        <h3>Products:</h3>
+<!--        <label for="products">Products:</label>-->
+        <textarea id="products" rows="5" cols="33" placeholder="3 банана и 1 яблоко среднего размера..."></textarea>
+
+        <div class="images" id="buttonContainer"></div>
+
+    <h3>Settings</h3>
+    <div id="category1">
+    <label for="category-select1">Language</label>
+    <select name="categories" id="category-select1">
+        <option value="langEn">english</option>
+        <option value="langRu">russian</option>
+    </select>
+    </div>
+
+    <div id="category2">
+    <label for="category-select2">Gender</label>
+    <select name="categories" id="category-select2">
+        <option value="not active">not active</option>
+        <option value="man">man</option>
+        <option value="woman">women</option>
+    </select>
+    </div>
+
+
+        <div id="category3">
+            <label for="category-select3">Age</label>
+            <select name="categories" id="category-select3">
+                <option value="not active">not active</option>
+            </select>
+        </div>
+
+
+    <div id="category4">
+        <label for="category-select4">Physical activity</label>
+        <select name="categories" id="category-select4">
+            <option value="not active">not active</option>
+            <option value="sedentary">sedentary</option>
+            <option value="slightly">slightly active</option>
+            <option value="moderately">moderately active</option>
+            <option value="very">very active</option>
+            <option value="extremely">extremely active</option>
+
+        </select>
+    </div>
+
+        <div id="category5">
+            <label for="category-select5">Height</label>
+            <select name="categories" id="category-select5">
+                <option value="not active">not active</option>
+            </select>
+        </div>
+
+        <div id="category6">
+            <label for="category-select6">Weight</label>
+            <select name="categories" id="category-select6">
+                <option value="not active">not active</option>
+            </select>
+        </div>
+
+        <div class="images">
+            <button id="pencilId2" aria-label="correct"><img src="pics/pencil.png" alt="" width="20" height="20"></button>
+            <button id="arrowId2" aria-label="add form"><img src="pics/arrow.png" alt="" width="20" height="20"></button>
+        </div>
+
+
+        <div id="result-box" style="display: none; margin-top: 20px; text-align: center; border-top: 1px solid #eee; padding-top: 10px;">
+            <h4 style="margin: 0; color: #333;">Your daily norm is:</h4>
+            <div id="calories-val" style="font-size: 24px; font-weight: bold; color: #4A90E2;">0 kcal</div>
+            <div id="macros" style="font-size: 12px; color: #666; margin-top: 5px;"></div>
+        </div>
+
+    </div>
+
 </head>
 <body>
-$END$
+<script src="main.js"></script>
 </body>
 </html>
